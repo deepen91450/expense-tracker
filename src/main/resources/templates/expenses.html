@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>My Expenses</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+  <div th:replace="fragments/header :: header"></div>
+  <div class="container">
+    <h2>My Expenses</h2>
+    <p><a th:href="@{/expenses/add}">Add Expense</a>
+      <a th:href="@{/expenses/export/csv}">Export CSV</a> |
+      <a th:href="@{/expenses/export/pdf}">Export PDF</a> |
+      <a th:href="@{/expenses/trash}">View Trash</a>
+    </p>
+    <table>
+      <thead><tr><th>Title</th><th>Category</th><th>Amount</th><th>Date</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr th:each="e : ${expenses}">
+          <td th:text="${e.title}">Title</td>
+          <td th:text="${e.category}">Category</td>
+          <td>₹ <span th:text="${e.amount}">0</span></td>
+          <td th:text="${e.date}">2025-01-01</td>
+            <td><a th:href="@{/expenses/soft-delete/{id}(id=${e.id})}">Delete</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

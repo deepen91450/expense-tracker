@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header>
+    <div class="container">
+  <div class="container navbar">
+    <div class="logo"><a th:href="@{/}">ExpenseTracker</a></div>
+    <nav>
+      <a th:href="@{/}">Home</a>
+      <a th:href="@{/expenses}">My Expenses</a>
+        <a th:href="@{/categories}">Categories</a>
+
+        <span th:if="${session.userName != null}">
+        <span th:text="${session.userName}"></span> |
+        <a th:href="@{/logout}">Logout</a>
+      </span>
+      <span th:if="${session.userName == null}">
+        <a th:href="@{/login}">Login</a> | <a th:href="@{/register}">Register</a>
+      </span>
+    </nav>
+  </div>
+    </div>
+</header>
+</body>
+</html>

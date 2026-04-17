@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Add Expense</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+  <div th:replace="fragments/header :: header"></div>
+  <div class="container">
+    <h2>Add Expense</h2>
+    <form th:action="@{/expenses/add}" method="post" th:object="${expense}">
+      <label>Title</label><br>
+      <input type="text" th:field="*{title}" required><br>
+      <label>Category</label><br>
+
+
+        <select th:field="*{category}">
+            <!-- Predefined Categories -->
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Rent">Rent</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Others">Others</option>
+
+            <!-- Custom Categories (from DB) -->
+            <option th:each="cat : ${categories}"
+                    th:value="${cat.name}"
+                    th:text="${cat.name}">
+            </option>
+        </select>
+        <br><br>
+
+
+      <label>Amount</label><br>
+      <input type="number" step="1" th:field="*{amount}" required><br>
+      <label>Date</label><br>
+      <input type="date" th:field="*{date}"><br><br>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+</body>
+</html>

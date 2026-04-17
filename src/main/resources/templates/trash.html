@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Trash - Deleted Expenses</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div class="container">
+    <h2>Deleted Expenses</h2>
+    <p><a th:href="@{/expenses}">Back to Expenses</a></p>
+    <table>
+        <thead><tr><th>Title</th><th>Category</th><th>Amount</th><th>Date</th><th>Action</th></tr></thead>
+        <tbody>
+        <tr th:each="e : ${deletedExpenses}">
+            <td th:text="${e.title}"></td>
+            <td th:text="${e.category}"></td>
+            <td>₹ <span th:text="${e.amount}"></span></td>
+            <td th:text="${e.date}"></td>
+            <td><a th:href="@{/expenses/restore/{id}(id=${e.id})}">Restore</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

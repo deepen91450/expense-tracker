@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+  <div th:replace="fragments/header :: header"></div>
+  <div class="container">
+    <h1>Welcome to Expense Tracker</h1>
+    <p>Track and manage your daily expenses easily.</p>
+    <p><a th:href="@{/register}">Get Started - Register</a></p>
+  </div>
+</body>
+</html>
