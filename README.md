@@ -121,25 +121,32 @@ The application is deployed on **Railway** with:
 
 ## 📸 Screenshots
 
-Suggested:
 
 * Home page
   <img width="1366" height="768" alt="Screenshot (557)" src="https://github.com/user-attachments/assets/8ea51017-9232-4b50-837b-5e92a97e811d" />
+  
 * Login Page
   <img width="1366" height="768" alt="Screenshot (560)" src="https://github.com/user-attachments/assets/755a6caa-72da-49d8-a355-189d95cf43e1" />
+  
 * Register
   <img width="1366" height="768" alt="Screenshot (558)" src="https://github.com/user-attachments/assets/6e634b63-e3d6-477f-97ba-f906ea074ba1" />
+  
 * Add expense page
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/330bd39e-9580-48b6-aeb1-d31ea9f2b772" />
+  
 * Expense list
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f305469f-b1ab-4708-8505-c01e28873c12" />
+  
 * Export CSV
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2464b650-f0e0-4bf4-a2e1-5a619dfaddc3" />
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/9c42b37d-ce60-4a44-b52b-5c1acbe54e35" />
+  
 * Export PDF
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a7ee1e5e-f868-4690-87d7-c187b779229b" />
+  
 * View Trash
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3421617a-0d3b-470d-9573-6aed2fa8f7ec" />
+  
 * Manage Categories
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0c451d91-50ce-48ed-883d-25f31b26130c" />
 ---
