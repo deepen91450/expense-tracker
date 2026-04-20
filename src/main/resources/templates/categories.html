@@ -5,22 +5,29 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
+
 <div th:replace="fragments/header :: header"></div>
 
 <div class="container">
     <h2>Manage Categories</h2>
 
-    <!-- Add New Category -->
+    <!-- Add Category Form -->
     <form th:action="@{/categories/add}" th:object="${category}" method="post">
-        <label>Category Name:</label>
-        <input type="text" th:field="*{name}" placeholder="Enter category name" required>
+
+        <div class="form-group">
+            <label>Category Name</label>
+            <input type="text" th:field="*{name}" placeholder="Enter category name" required>
+        </div>
+
         <button type="submit">Add Category</button>
     </form>
 
-    <br><hr><br>
+    <!-- Divider -->
+    <div class="divider"></div>
 
-    <!-- List of Categories -->
+    <!-- Category List -->
     <h3>Your Categories</h3>
+
     <table>
         <thead>
         <tr>
@@ -29,14 +36,23 @@
             <th>Action</th>
         </tr>
         </thead>
+
         <tbody>
         <tr th:each="c : ${categories}">
             <td th:text="${c.id}"></td>
             <td th:text="${c.name}"></td>
-            <td><a th:href="@{/categories/delete/{id}(id=${c.id})}">Delete</a></td>
+
+            <td>
+                <a th:href="@{/categories/delete/{id}(id=${c.id})}"
+                   class="btn-danger btn-small">
+                    Delete
+                </a>
+            </td>
         </tr>
         </tbody>
     </table>
+
 </div>
+
 </body>
 </html>

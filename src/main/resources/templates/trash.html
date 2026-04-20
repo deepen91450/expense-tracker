@@ -5,22 +5,49 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
+
 <div th:replace="fragments/header :: header"></div>
+
 <div class="container">
     <h2>Deleted Expenses</h2>
-    <p><a th:href="@{/expenses}">Back to Expenses</a></p>
+
+    <!-- Back Button -->
+    <div class="actions">
+        <a th:href="@{/expenses}" class="btn btn-secondary btn-small">
+            ← Back to Expenses
+        </a>
+    </div>
+
+    <!-- Table -->
     <table>
-        <thead><tr><th>Title</th><th>Category</th><th>Amount</th><th>Date</th><th>Action</th></tr></thead>
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
         <tbody>
         <tr th:each="e : ${deletedExpenses}">
             <td th:text="${e.title}"></td>
             <td th:text="${e.category}"></td>
             <td>₹ <span th:text="${e.amount}"></span></td>
             <td th:text="${e.date}"></td>
-            <td><a th:href="@{/expenses/restore/{id}(id=${e.id})}">Restore</a></td>
+
+            <td>
+                <a th:href="@{/expenses/restore/{id}(id=${e.id})}"
+                   class="btn-success btn-small">
+                    Restore
+                </a>
+            </td>
         </tr>
         </tbody>
     </table>
+
 </div>
+
 </body>
 </html>

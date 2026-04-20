@@ -8,10 +8,12 @@
 <body>
 
   <div th:replace="fragments/header :: header"></div>
-  <div class="container">
-    <h1>Welcome to Expense Tracker</h1>
-    <p>Track and manage your daily expenses easily.</p>
-    <p><a th:href="@{/register}">Get Started - Register</a></p>
+  <div class="container hero">
+      <h1>Welcome to Expense Tracker</h1>
+      <p>Track and manage your daily expenses easily.</p>
+
+      <a th:href="@{/register}" class="btn btn-primary">Get Started</a>
+      <a th:href="@{/register}" class="btn btn-secondary">Register</a>
   </div>
 </body>
 </html>
