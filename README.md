@@ -123,7 +123,8 @@ The application is deployed on **Railway** with:
 
 
 * Home page
- <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/5d0feb59-20d4-4a29-be28-dc39aaf0f5ef" />
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/594b7873-4d56-4332-9499-0515f4d7b6eb" />
+
 
   
 * Login Page
@@ -131,11 +132,12 @@ The application is deployed on **Railway** with:
 
   
 * Register
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/03804b3a-eae7-40ab-b3f5-b1131ec131ff" />
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/03804b3a-eae7-40ab-b3f5-b1131ec131ff" />
 
   
 * Add expense page
-  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/330bd39e-9580-48b6-aeb1-d31ea9f2b772" />
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/97c00f01-da83-47cf-8bbb-d44cbb8ad0cc" />
+
   
 * Expense list
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/80459e18-acf6-4e7a-9c91-fb41a9268c3c" />
@@ -149,7 +151,7 @@ The application is deployed on **Railway** with:
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a7ee1e5e-f868-4690-87d7-c187b779229b" />
   
 * View Trash
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bb472d7d-5082-4bbb-a1fa-009c5c950f8f" />
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bb472d7d-5082-4bbb-a1fa-009c5c950f8f" />
 
   
 * Manage Categories
