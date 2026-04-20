@@ -144,8 +144,8 @@ The application is deployed on **Railway** with:
 
   
 * Export CSV
-  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2464b650-f0e0-4bf4-a2e1-5a619dfaddc3" />
-  
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/f654b124-8dc0-4bfc-b52e-e2adc12731b4" />
+
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/9c42b37d-ce60-4a44-b52b-5c1acbe54e35" />
   
 * Export PDF
