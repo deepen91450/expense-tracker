@@ -128,11 +128,11 @@ The application is deployed on **Railway** with:
 
   
 * Login Page
-  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c0fc37eb-a621-4f97-b299-7e037bd82d71" />
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/77120b7d-7455-4be0-88bf-26da94c95594" />
 
   
 * Register
-  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/03804b3a-eae7-40ab-b3f5-b1131ec131ff" />
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/111a0d27-d822-4bd8-b06a-e73bfb3a2169" />
 
   
 * Add expense page
@@ -145,6 +145,7 @@ The application is deployed on **Railway** with:
   
 * Export CSV
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2464b650-f0e0-4bf4-a2e1-5a619dfaddc3" />
+  
   <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/9c42b37d-ce60-4a44-b52b-5c1acbe54e35" />
   
 * Export PDF
